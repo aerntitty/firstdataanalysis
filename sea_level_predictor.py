@@ -19,8 +19,8 @@ def draw_plot():
     plt.plot(x,line_of_best_fit,color='purple',linestyle='dotted', label='best fit')
 
     # Create second line of best fit
-    2000_df=df[df['Year']>= 2000]
-    slope2,intercept2,r_value2,_,_ =linregress(2000_df['Year'],2000_df['CSIRO Adjusted Sea Level'])
+    two_df=df[df['Year']>= 2000]
+    slope2,intercept2,r_value2,_,_ =linregress(two_df['Year'],two_df['CSIRO Adjusted Sea Level'])
     y=np.arange(2000,2051)
     line_of_best_fit2000=slope2* y +intercept2
     plt.plot(y,line_of_best_fit2000,'b--',label="Best Fit Line (2000 Onwards)")

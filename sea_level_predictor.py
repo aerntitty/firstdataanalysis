@@ -20,10 +20,10 @@ def draw_plot():
 
     # Create second line of best fit
     2000_df=df[df['Year']>= 2000]
-    slope2,intercept2,r_value2,_,_ =inregress(2000_df['Year'],2000_df['CSIRO Adjusted Sea Level'])
+    slope2,intercept2,r_value2,_,_ =linregress(2000_df['Year'],2000_df['CSIRO Adjusted Sea Level'])
     y=np.arange(2000,2051)
     line_of_best_fit2000=slope2* y +intercept2
-    plt.plot(y,line_of_best_fit2000,'b--',label'='Best Fit Line (2000 Onwards)")
+    plt.plot(y,line_of_best_fit2000,'b--',label="Best Fit Line (2000 Onwards)")
 
     # Add labels and title
     plt.legend()

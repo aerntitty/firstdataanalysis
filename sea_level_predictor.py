@@ -30,7 +30,7 @@ def draw_plot():
 
     plt.xlabel("Year")
     plt.ylabel("Sea Level (inches)")
-    plt.title("Sea Level Rise Prediction")
+    plt.title("Rise in Sea Level")
 
 
     plt.show()

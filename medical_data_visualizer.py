@@ -3,12 +3,10 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 
-def main():
-    draw_cat_plot()
-    draw_heat_map()
+
 
 # 1
-df =pd.read_csv(r'/workspace/boilerplate-medical-data-visualizer/medical_examination.csv')
+df =pd.read_csv('medical_examination.csv')
 
 
 # 2
